@@ -29,12 +29,13 @@ render(h(Comp), document.body)`
         addDoctype: true,
       })
     }
-  })
-  client = await CDP({
-    host: '127.0.0.1', //
-    port: '9222',
-  })
+  }, { port: null })
+  let client
   try {
+    client = await CDP({
+      host: '127.0.0.1', //
+      port: '9222',
+    })
     const { Page, Runtime } = client
     await Page.enable()
     await Page.navigate({ url })
@@ -55,7 +56,7 @@ render(h(Comp), document.body)`
     }
   } finally {
     await Promise.all([
-      await client.close(),
+      client && await client.close(),
       await app.destroy(),
     ])
   }
