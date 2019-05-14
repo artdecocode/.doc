@@ -8,7 +8,7 @@ const Render = async ({ src, frontend = '', children, to }) => {
   const dir = dirname(src)
   const d = [dir, ...frontend.split(',')]
   const html = `import { render, h } from '/node_modules/preact/dist/preact.mjs'
-import Comp from './${src}'
+`+`import Comp from './${src}'
 render(h(Comp), document.body)`
   const { url, app } = await core({
     frontend: {
@@ -41,6 +41,8 @@ render(h(Comp), document.body)`
     await Page.navigate({ url })
     await Page.loadEventFired()
     const rect = await Runtime.evaluate({ expression: 'JSON.stringify(document.body.getBoundingClientRect())' })
+    // console.log(url)
+    // await new Promise(r => setTimeout(r, 100000000))
     let { result: { value = {} }, exceptionDetails } = rect
     if (value) value = JSON.parse(value)
     const res = await Page.captureScreenshot({
