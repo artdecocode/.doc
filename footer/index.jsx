@@ -3,7 +3,7 @@ const Footer = ({ client, clientLink, clientLogo }) => {
   <tr>
     <th>
       <a href="https://artd.eco">
-        <img src="https://raw.githubusercontent.com/wrote/wrote/master/images/artdeco.png" alt="Art Deco"/>
+        <img width="100" src="https://raw.githubusercontent.com/wrote/wrote/master/images/artdeco.png" alt="Art Deco"/>
       </a>
     </th>
     <th>
@@ -13,12 +13,12 @@ const Footer = ({ client, clientLink, clientLogo }) => {
       client && clientLogo &&
       <th>
         <a href={clientLink}>
-          <img width="100" src={clientLogo} alt={client}/>
+          <img width="100" width="100" src={clientLogo} alt={client}/>
         </a>
       </th>}
     <th>
       <a href="https://www.technation.sucks" title="Tech Nation Visa">
-        <img src="https://raw.githubusercontent.com/artdecoweb/www.technation.sucks/master/anim.gif" alt="Tech Nation Visa"/>
+        <img width="100" src="https://raw.githubusercontent.com/idiocc/cookies/master/wiki/arch4.jpg" alt="Tech Nation Visa"/>
       </a>
     </th>
     <th>

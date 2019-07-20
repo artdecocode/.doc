@@ -1,5 +1,7 @@
 import Footer from './footer'
+
 export { Footer }
+export { default as goa } from './goa'
 
 export const Sponsor = () => {
   return <table>
@@ -49,17 +51,12 @@ export const Externs = ({ namespace }) => {
   return `The types and [externs](externs.js) for _Google Closure Compiler_ via [**_Depack_**](https:/`+`/github.com/dpck/depack) are defined in the \`${namespace}\` namespace.`
 }
 
-export const Goa = () => {
-  return `The original module has been updated to be used in [\`@goa/koa\`](https:/`+`/artdecocode.com/goa/): _Koa_ web server compiled with _Google Closure Compiler_ using [**Depack**](https://artdecocode.com/depack/) into a single file library (0 dependencies).`
-}
-
 export default {
   footer: Footer,
   'idio-footer': IdioFooter,
   'wrote-footer': WroteFooter,
-  'alamode-footer': IdioFooter,
+  'alamode-footer': ÀLaModeFooter,
   'depack-footer': DepackFooter,
   'context-testing-footer': ContextTestingFooter,
   'externs': Externs,
-  'goa': Goa,
 }
