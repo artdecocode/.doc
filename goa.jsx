@@ -16,7 +16,7 @@ export default ({ documentary, test }) => {
   </td>
   <td>
     {'\n\n'}
-    The tests were rewritten using [context testing](https://contexttesting.com). The [Http Context](https://npmjs.org/@contexts/http), in particular the Cookie Tester was used to assert on presence of entries, and their attributes.
+    The tests were rewritten using [context testing](https://contexttesting.com). The [Http Context](https://npmjs.org/@contexts/http), in particular the Cookie Tester was used to assert on presence of entries, and their attributes.{'\n\n'}
   <details><summary>Show the tests.</summary>
 {'\n\n'}
 %EXAMPLE: {test}%{'\n'}
