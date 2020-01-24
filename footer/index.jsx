@@ -2,12 +2,12 @@ const Footer = ({ client, clientLink, clientLogo }) => {
   return (<table>
   <tr>
     <th>
-      <a href="https://artd.eco">
+      <a href="https://www.artd.eco">
         <img width="100" src="https://raw.githubusercontent.com/wrote/wrote/master/images/artdeco.png" alt="Art Deco"/>
       </a>
     </th>
     <th>
-      © <a href="https://artd.eco">Art Deco</a> {client && `for`} {client && <a href={clientLink}>{client}</a>}
+      © <a href="https://artd.eco">Art Deco™</a> {client && `for`} {client && <a href={clientLink}>{client}</a>}
       {` ${new Date().getFullYear()}`}
     </th>{
       client && clientLogo &&
@@ -16,14 +16,6 @@ const Footer = ({ client, clientLink, clientLogo }) => {
           <img width="100" width="100" src={clientLogo} alt={client}/>
         </a>
       </th>}
-    <th>
-      <a href="https://www.technation.sucks" title="Tech Nation Visa">
-        <img width="100" src="https://raw.githubusercontent.com/idiocc/cookies/master/wiki/arch4.jpg" alt="Tech Nation Visa"/>
-      </a>
-    </th>
-    <th>
-      <a href="https://www.technation.sucks">Tech Nation Visa Sucks</a>
-    </th>
   </tr>
 </table>)
 }
