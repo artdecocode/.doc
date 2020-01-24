@@ -45,7 +45,7 @@ export const ContextTestingFooter = () => {
 `)
 }
 
-export { default as Render } from './Render'
+import Render, { screenshot } from './Render'
 
 export const Externs = ({ namespace }) => {
   return `The types and [externs](externs.js) for _Google Closure Compiler_ via [**_Depack_**](https:/`+`/github.com/dpck/depack) are defined in the \`${namespace}\` namespace.`
@@ -53,6 +53,9 @@ export const Externs = ({ namespace }) => {
 
 export default {
   footer: Footer,
+  Render,
+  render: Render,
+  screenshot,
   'idio-footer': IdioFooter,
   'wrote-footer': WroteFooter,
   'alamode-footer': ÀLaModeFooter,

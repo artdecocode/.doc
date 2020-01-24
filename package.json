@@ -5,11 +5,11 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "@depack/render": "1.1.4",
-    "@idio/core": "1.4.0"
+    "@depack/render": "1.3.4",
+    "@idio/idio": "^1.2.3"
   },
   "devDependencies": {
-    "@wrote/write": "1.0.4",
-    "chrome-remote-interface": "0.27.1"
+    "@wrote/wrote": "^1.2.3",
+    "chrome-remote-interface": "0.28.1"
   }
 }
