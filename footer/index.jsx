@@ -7,7 +7,7 @@ const Footer = ({ client, clientLink, clientLogo }) => {
       </a>
     </th>
     <th>
-      © <a href="https://artd.eco">Art Deco™</a> {client && `for`} {client && <a href={clientLink}>{client}</a>}
+      © <a href="https://www.artd.eco">Art Deco™</a> {client && `for`} {client && <a href={clientLink}>{client}</a>}
       {` ${new Date().getFullYear()}`}
     </th>{
       client && clientLogo &&
