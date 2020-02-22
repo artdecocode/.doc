@@ -40,9 +40,9 @@ export const DepackFooter = () => {
 }
 
 export const ContextTestingFooter = () => {
-  return (`
-  (c) [Context Testing](https://contexttesting.com) ${new Date().getFullYear()}
-`)
+  return (<Footer client="ContextTesting"
+    clientLogo="https://avatars1.githubusercontent.com/u/44418436?s=100"
+    clientLink="https://www.contexttesting.com" />)
 }
 
 import Render, { screenshot } from './Render'
